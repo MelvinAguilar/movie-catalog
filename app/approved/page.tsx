@@ -1,7 +1,7 @@
 import { Footer, Movies, Navbar } from "@/components";
 import { nunito } from "@/fonts";
 
-export default function Home() {
+export default function Approved() {
   return (
     <>
       <Navbar />

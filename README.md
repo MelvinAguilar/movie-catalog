@@ -1,6 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+  <h1 align="center">
+    Movie Web   
+    </h1>
+> ~
+> <h3 align="center">A web application that allows users to search for movies and view details about them.</h3>
+> <p align="center">
+>   <img src="https://img.shields.io/badge/NextJS-black?style=for-the-badge&logo=next.js&logoColor=white" />
+>   <img src="https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
+>   <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
+>   <img src="https://img.shields.io/badge/React_Redux-764ABC?style=for-the-badge&logo=redux&logoColor=white" />
+>   <img src="https://img.shields.io/badge/React_Loading_Skeleton-00BFFF?style=for-the-badge&logo=react&logoColor=white" />
+>   <img src="https://img.shields.io/badge/Axios-00BFFF?style=for-the-badge&logo=axios&logoColor=white" />
+>   <img src="https://img.shields.io/badge/SplideJS-00BFFF?style=for-the-badge&logo=splide.js&logoColor=white" />
+> </p>
+> ~
+</div>
 
-## Getting Started
+## Table of Contents
+
+- [About](#about)
+- [Getting Started](#getting_started)
+- [Usage](#usage)
+- [Screenshots](#screenshots)
+- [Built Using](#built_using)
+- [Contributing](../CONTRIBUTING.md)
+- [Authors](#authors)
+- [Acknowledgement](#acknowledgement)
+
+## About <a name = "about"></a>
+
+This project is a web application that allows users to search for movies and view details about them.
+
+## Built Using <a name = "built_using"></a>
+
+- [NextJS](https://nextjs.org/) - React Framework
+- [TailwindCSS](https://tailwindcss.com/) - CSS Framework
+- [TypeScript](https://www.typescriptlang.org/) - Programming Language
+- [React Redux](https://react-redux.js.org/) - State Management
+- [React Loading Skeleton](https://www.npmjs.com/package/react-loading-skeleton) - Loading Skeleton
+- [Axios](https://axios-http.com/) - HTTP Client
+- [SplideJS](https://splidejs.com/) - Carousel
+
+## Getting Started <a name = "getting_started"></a>
 
 First, run the development server:
 
@@ -26,9 +67,3 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
