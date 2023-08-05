@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { searchMovie } from "@/features/currentGenreOrCategory";
 
+// eslint-disable-next-line max-lines
 const SearchBar = () => {
   const [query, setQuery] = useState("");
   const dispatch = useDispatch();
@@ -26,7 +27,10 @@ const SearchBar = () => {
         <input
           type="search"
           id="default-search"
-          className="border-default bg-control padding-control | block w-full rounded-3xl border pr-12 text-sm text-gray-900 focus:border-blue-500  focus:ring-blue-500 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+          className="border-default bg-control padding-control | block w-full rounded-3xl 
+          border pr-12 text-sm text-gray-900 focus:border-blue-500
+          focus:ring-blue-500 dark:text-white dark:placeholder-gray-400
+          dark:focus:border-blue-500 dark:focus:ring-blue-500"
           placeholder="Search movie"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
@@ -35,7 +39,10 @@ const SearchBar = () => {
         />
         <button
           type="submit"
-          className="absolute right-0 top-0 rounded-3xl border border-blue-700 bg-blue-700 p-2 text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          className="absolute right-0 top-0 rounded-3xl border border-blue-700
+           bg-blue-700 p-2 text-sm font-medium text-white hover:bg-blue-800
+            focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600
+            dark:hover:bg-blue-700 dark:focus:ring-blue-800"
           onClick={() => dispatch(searchMovie(query))}
         >
           <svg

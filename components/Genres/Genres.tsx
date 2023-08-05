@@ -26,7 +26,7 @@ const Genres: React.FC<GenresProps> = ({ genreId, pageId }) => {
   );
 
   const { data, error, isFetching } = useGetMoviesQuery({
-    genreIdOrCategoryName: Number(genreId) === NaN ? genreId : Number(genreId),
+    genreIdOrCategoryName: isNaN(Number(genreId)) ? genreId : Number(genreId),
     page: page ? page : 1,
     searchQuery,
   });
