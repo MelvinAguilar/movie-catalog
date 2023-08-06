@@ -16,6 +16,8 @@ interface GenreCarouselProps {
 }
 
 const GenreCarousel: React.FC<GenreCarouselProps> = ({ genres }) => {
+  const dispatch = useDispatch();
+
   return (
     <div>
       <Splide
@@ -43,6 +45,11 @@ const GenreCarousel: React.FC<GenreCarouselProps> = ({ genres }) => {
 
               <Link
                 href={`/genre?genreId=${genre.id}&page=1`}
+                onClick={() => {
+                  dispatch(
+                    selectGenreOrCategory({ genreId: genre.id, page: 1 })
+                  );
+                }}
                 className="absolute inset-0"
               >
                 <span className="sr-only">Show movies in {genre.name}</span>

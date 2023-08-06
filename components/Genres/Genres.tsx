@@ -21,13 +21,13 @@ interface GenresProps {
 const Genres: React.FC<GenresProps> = ({ genreId, pageId }) => {
   const [page, setPage] = useState(pageId);
 
-  const { searchQuery } = useSelector(
+  const { searchQuery, page: reduxPage } = useSelector(
     (state: RootState) => state.currentGenreOrCategory
   );
 
   const { data, error, isFetching } = useGetMoviesQuery({
     genreIdOrCategoryName: isNaN(Number(genreId)) ? genreId : Number(genreId),
-    page: page ? page : 1,
+    page: page ? (searchQuery ? reduxPage : page) : 1,
     searchQuery,
   });
 
@@ -45,7 +45,7 @@ const Genres: React.FC<GenresProps> = ({ genreId, pageId }) => {
   return (
     <>
       <div className="container mt-20 p-6 md:p-8">
-        <GenreList genreId={genreId} pageId={pageId} />
+        <GenreList genreId={genreId} searchQuery={searchQuery} />
         <SearchBar />
         <MovieList movies={data} numberOfMovies={20} />
         <Pagination

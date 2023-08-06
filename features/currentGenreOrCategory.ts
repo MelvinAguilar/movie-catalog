@@ -1,4 +1,4 @@
-import { createSlice, PayloadAction }  from "@reduxjs/toolkit";
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 interface GenreOrCategoryState {
   genreIdOrCategoryName: string;
@@ -20,6 +20,7 @@ export const genreOrCategory = createSlice({
     },
     searchMovie: (state, action: PayloadAction<string>) => {
       state.searchQuery = action.payload;
+      state.page = 1;
     },
   },
 });

@@ -33,10 +33,6 @@ const Movies = () => {
         <FeaturedSkeleton />
         <div className="container p-6 md:p-8">
           <CatalogCarousel />
-          <h2 className="mt-14 text-2xl font-medium text-blue-500">
-            Now Playing
-          </h2>
-          <CarouselSkeleton numberOfSkeletons={17} onlyOneRow={false} />
         </div>
       </>
     );
@@ -56,18 +52,6 @@ const Movies = () => {
 
       <div className="container p-6 md:p-8">
         <CatalogCarousel />
-
-        <h2 className="mt-14 text-2xl font-medium text-blue-500">
-          Discover Movies
-        </h2>
-        <MovieList movies={data} numberOfMovies={18} />
-        <Pagination
-          genreId={""}
-          isRouter={false}
-          page={page}
-          totalPages={data.total_pages}
-          setPage={setPage}
-        />
       </div>
     </>
   );

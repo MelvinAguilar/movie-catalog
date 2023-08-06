@@ -36,7 +36,7 @@ const CatalogCarousel = () => {
 
       <section className="catalog">
         <div className="mb-4 mt-14 flex flex-wrap items-end gap-4 md:flex-row">
-          <h2 className="text-2xl font-medium text-blue-500 ">Upcoming</h2>
+          <h2 className="text-2xl font-medium text-blue-500">Upcoming</h2>
           <Link
             href="/genre/genreId?=upcoming&page=1"
             className="catalog-link flex items-center gap-2 md:invisible"

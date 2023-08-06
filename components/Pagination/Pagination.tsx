@@ -44,7 +44,7 @@ const Pagination: React.FC<PaginationProps> = ({
             <Link
               aria-disabled={page === 1}
               href={
-                isRouter ? `/genre?genreId=${genreId}&page=${page - 1}` : "/"
+                isRouter ? `/genre?genreId=${genreId}&page=${page - 1}` : "#"
               }
               onClick={handlePrev}
               className={`flex h-8 items-center justify-center rounded-l-lg border border-gray-300 bg-white px-3 text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white ${
@@ -73,7 +73,7 @@ const Pagination: React.FC<PaginationProps> = ({
             <>
               <li role="listitem">
                 <Link
-                  href={isRouter ? `/genre?genreId=${genreId}&page=1` : "/"}
+                  href={isRouter ? `/genre?genreId=${genreId}&page=1` : ""}
                   onClick={() => handlePage(1)}
                   className={`flex h-8 items-center justify-center border border-gray-300 bg-white px-3 text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white`}
                 >
@@ -96,7 +96,7 @@ const Pagination: React.FC<PaginationProps> = ({
             <li role="listitem">
               <Link
                 href={
-                  isRouter ? `/genre?genreId=${genreId}&page=${page - 2}` : "/"
+                  isRouter ? `/genre?genreId=${genreId}&page=${page - 2}` : "#"
                 }
                 onClick={() => handlePage(page - 2)}
                 className="-ml-px flex h-8 w-8 items-center justify-center border border-gray-300 bg-white text-sm text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
@@ -109,7 +109,7 @@ const Pagination: React.FC<PaginationProps> = ({
             <li role="listitem">
               <Link
                 href={
-                  isRouter ? `/genre?genreId=${genreId}&page=${page - 1}` : "/"
+                  isRouter ? `/genre?genreId=${genreId}&page=${page - 1}` : "#"
                 }
                 onClick={() => handlePage(page - 1)}
                 className="-ml-px flex h-8 w-8 items-center justify-center border border-gray-300 bg-white text-sm text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
@@ -120,7 +120,7 @@ const Pagination: React.FC<PaginationProps> = ({
           )}
           <li role="listitem">
             <Link
-              href={isRouter ? `/genre?genreId=${genreId}&page=${page}` : "/"}
+              href={isRouter ? `/genre?genreId=${genreId}&page=${page}` : "#"}
               onClick={() => handlePage(page)}
               className="-ml-px flex h-8 w-8 items-center justify-center border border-blue-600 bg-blue-600 text-sm text-white hover:bg-blue-700 hover:text-white dark:border-blue-700 dark:bg-blue-700 dark:hover:bg-blue-800 dark:hover:text-white"
             >
@@ -131,7 +131,7 @@ const Pagination: React.FC<PaginationProps> = ({
             <li role="listitem">
               <Link
                 href={
-                  isRouter ? `/genre?genreId=${genreId}&page=${page + 1}` : "/"
+                  isRouter ? `/genre?genreId=${genreId}&page=${page + 1}` : "#"
                 }
                 onClick={() => handlePage(page + 1)}
                 className="-ml-px flex h-8 w-8 items-center justify-center border border-gray-300 bg-white text-sm text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
@@ -144,7 +144,7 @@ const Pagination: React.FC<PaginationProps> = ({
             <li role="listitem">
               <Link
                 href={
-                  isRouter ? `/genre?genreId=${genreId}&page=${page + 2}` : "/"
+                  isRouter ? `/genre?genreId=${genreId}&page=${page + 2}` : "#"
                 }
                 onClick={() => handlePage(page + 2)}
                 className="-ml-px flex h-8 w-8 items-center justify-center border border-gray-300 bg-white text-sm text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
@@ -169,7 +169,7 @@ const Pagination: React.FC<PaginationProps> = ({
                   href={
                     isRouter
                       ? `/genre?genreId=${genreId}&page=${LIMIT_PAGES}`
-                      : "/"
+                      : "#"
                   }
                   onClick={() => handlePage(LIMIT_PAGES)}
                   className={`flex h-8 items-center justify-center border border-gray-300 bg-white px-3 text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white`}
@@ -184,7 +184,7 @@ const Pagination: React.FC<PaginationProps> = ({
             <Link
               aria-disabled={page === LIMIT_PAGES}
               href={
-                isRouter ? `/genre?genreId=${genreId}&page=${page + 1}` : "/"
+                isRouter ? `/genre?genreId=${genreId}&page=${page + 1}` : "#"
               }
               onClick={handleNext}
               className={`flex h-8 items-center justify-center rounded-r-lg border border-gray-300 bg-white px-3 text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white ${

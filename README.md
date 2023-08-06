@@ -1,8 +1,12 @@
+<div id="top"></div>
+
+![](https://i.imgur.com/nWXQCeA.png)
+
 <div align="center">
-  <h1 align="center">
-    Movie Web   
-    </h1>
+  <h1 align="center">Movie Web</h1>
+
 > ~
+>
 > <h3 align="center">A web application that allows users to search for movies and view details about them.</h3>
 > <p align="center">
 >   <img src="https://img.shields.io/badge/NextJS-black?style=for-the-badge&logo=next.js&logoColor=white" />
@@ -14,22 +18,25 @@
 >   <img src="https://img.shields.io/badge/SplideJS-00BFFF?style=for-the-badge&logo=splide.js&logoColor=white" />
 > </p>
 > ~
+
 </div>
+
+**Disclaimer:**
+
+This code is inspired by the ["**Build an AI Powered Movie Application and Master React**"](https://www.jsmastery.pro/ultimate-react-course) course by **JSMastery Pro**, but it is not an exact copy. While the course utilizes React and Material UI, my version is built with Next.js and Tailwind CSS, and includes design modifications. It remains an independent project aimed at achieving similar functionality but with different technologies.
 
 ## Table of Contents
 
 - [About](#about)
-- [Getting Started](#getting_started)
-- [Usage](#usage)
-- [Screenshots](#screenshots)
 - [Built Using](#built_using)
-- [Contributing](../CONTRIBUTING.md)
-- [Authors](#authors)
-- [Acknowledgement](#acknowledgement)
+- [Getting Started](#getting_started)
+- [Learn more](#learg_more)
 
 ## About <a name = "about"></a>
 
 This project is a web application that allows users to search for movies and view details about them.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Built Using <a name = "built_using"></a>
 
@@ -59,7 +66,9 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+## Learn More <a name = "learn_more"></a>
 
 To learn more about Next.js, take a look at the following resources:
 
@@ -67,3 +76,5 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+<p align="right">(<a href="#top">back to top</a>)</p>
